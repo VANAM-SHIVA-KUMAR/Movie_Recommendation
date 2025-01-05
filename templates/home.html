@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Recommendation System</title>
+    <style>
+        body{
+        margin: 0px;
+        padding: 0px;
+        background-image: url('https://easttexasradio.com/wp-content/uploads/2018/03/movies-1024x576.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        .container{
+            /* display: flex; */
+            width: 700px;
+            margin-top: 10%;
+            margin-left: 25%;
+            margin-right: 10%;
+            border: 2px solid gray;
+            box-shadow: 3px 12px 12px 3px gray;
+            background-color:blanchedalmond;
+            /* color: white; */
+        }
+        .header
+        {
+            /* border: 2px solid green; */
+            width: 100%;
+        }
+        .header h1{
+            text-align: center;
+        }
+        .container h3{
+            text-align: right;
+            margin-right: 10%;
+
+        }
+        .form-container{
+            /* border: 2px solid green; */
+            margin-left: 20%;
+            padding: 12px 12px;
+        }
+        .form-container label{
+            padding: 5px 12px;
+            font-size: 20px;
+            color: black;
+            font-weight: bolder;
+        }
+        .form-container input{
+            padding: 5px 12px;
+            margin-top: 12px;
+            margin-left: 20px;
+            border-radius: 6px;
+        }
+        .btn{
+            margin-top: 20px;
+            margin-left: 25%;
+        }
+        .btn input{
+            padding: 12px 22px;
+            background-color: tomato;
+            font-size: 16px;
+            font-weight: bolder;
+            cursor: pointer;
+        }
+        .btn input :hover{
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Welcome to Popularity based Movie Recommendation System</h1>
+            <h3>-Shiva Krishna</h3>
+        </div>
+        <div class="form-container">
+            <form method="POST" action="{{url_for('home')}}">
+                <label>Enter Movie Genre</label>
+                <input type="text" name='a' placeholder="Genre like Action,drama etc" required/><br>
+                <label>Enter Threshold ratings</label>
+                <input type="text" name='b' placeholder="min no.of rating" required/><br>
+                <label>Enter Minimum rating</label>
+                <input type="text" name='c' placeholder="Minimum rating" required/><br>
+                <label>Enter No.of movies you want</label>
+                <input type="text" name='d' placeholder="No.of movies you want" required/><br>
+                <div class="btn"><input type="submit" value="Predict"></div>
+            </form> 
+        </div>
+    </div>
+</body>
+</html>

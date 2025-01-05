@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Result</title>
+    <style>
+        .body{
+            /* background-image: url('https://th.bing.com/th/id/R.ee31be9f4e546e41150375c247003b25?rik=lyYp7SfQ82xRMA&riu=http%3a%2f%2ftradearabia.com%2fsource%2f2017%2f12%2f11%2fcinemas.jpg%3f08%3a11%3a49am&ehk=adLug1R%2b6iwLwbNOlWmqoS%2fvBcZfr6lu6%2fGRfU1EdpI%3d&risl=&pid=ImgRaw&r=0'); */
+            background-image: url('https://th.bing.com/th/id/OIP.U4Y0L4ERfUGO9Hza1IjONQAAAA?pid=ImgDet&rs=1');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .container{
+            background-color: blanchedalmond;
+            margin-top: 10%;
+            margin-left: 20%;
+            margin-right: 10%;
+            border: 2px solid red;
+            padding-left: 20%;
+            height: fit-content;
+            border: 2px solid gray;
+            box-shadow: 3px 12px 12px 3px gray;
+            padding-bottom: 52px;
+        }
+        table {
+      border-collapse: collapse;
+      width: 100%;
+      margin-left: -100px;
+      font-size: 18px;
+    }
+    
+    th, td {
+      padding: 8px;
+      text-align: left;
+      border-bottom: 1px solid black;
+    }
+    h1 {
+      font-family: Arial, sans-serif;
+      font-size: 24px;
+      color: #333;
+      margin-bottom: 20px;
+    }
+        input{
+            margin-left: 40px;
+            margin-top: 32px;
+            color: blue;
+            text-decoration: none;
+            text-align: center;
+            font-size: 36px;
+            border: 2px solid tomato;
+            background-color: tomato;
+            padding: 5px 12px;
+            border-radius: 12px;
+        }
+    </style>
+</head>
+<body style="background-image: url(https://dailyiowan.com/wp-content/uploads/2019/10/SpookyCinema-3.jpg);background-repeat: no-repeat;background-size: cover;">
+    <div class="container">
+        <h1>Recommended Movies from 1950 to 2016 Are-</h1>
+        <table>{{ data|safe }}</table>
+        <form action="{{url_for('man')}}">
+            <input type="submit" value="Go back">
+        </form>
+    </div>
+</body>
+</html>

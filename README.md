@@ -4,4 +4,4 @@ The Popularity-based Movie Recommendation system works by identifying the most p
 
 The project utilizes a dataset that contains movie ratings provided by users. Each rating consists of the movie ID, user ID, and the rating value. The project focuses on analyzing the popularity of movies and generating recommendations based on their popularity.
 
-•	Project Weblink: https://movie-recommendation-system-1950-2016.onrender.com/
+•	Project Weblink: https://movie-recommendation-system-1950-2016.onrender.com
